@@ -36,10 +36,11 @@ public class EndBiomeDetector extends BiomeDetector{
 				// Test void
 				if (highestY == 0)
 				{
-					add(ocur, TileTextureGroup.END_VOID, 2);
+					add(ocur, TileTextureGroup.END_VOID, 1);
+					continue;
 				}
 				
-				add(ocur, text, 1);
+				add(ocur, text, 4);
 			}
 		}
 		
