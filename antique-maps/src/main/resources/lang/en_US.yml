@@ -1,0 +1,3 @@
+empty_antique_map_item_name: "Empty Antique Map"
+antique_map_item_name: "Antique Map"
+incorrect_dimension_message: "Antique Maps cannot be created in this dimension!"

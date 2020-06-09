@@ -1,0 +1,25 @@
+# Language file to be used. All language files have the "name.yml" format and
+# should be stored in the "lang" folder. Available languages: en_US, es_ES
+lang: "en_US"
+
+# If the map generation should be done asyncronously. Should not be noticeable,
+# but if true it prevents the server from waiting for the map to generate
+async: true
+
+# If the map should display the white marker with the position and direction of player.
+# This section only works for spigot versions 1.14.1 and forward.
+tracking:
+  default: true
+  allowChange: true # Whether players can turn on / off tracking using Shift + RightClick
+  
+edit:
+  allow: true
+  item: "feather"
+  
+# Necessary ingredients (shapeless) to craft an empty map
+map_recipe:
+  - "paper"
+  - "paper"
+  - "paper"
+  - "black_dye"
+  
