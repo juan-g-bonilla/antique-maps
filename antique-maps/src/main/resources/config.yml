@@ -12,10 +12,6 @@ tracking:
   default: true
   allowChange: true # Whether players can turn on / off tracking using Shift + RightClick
   
-edit:
-  allow: true
-  item: "feather"
-  
 # Necessary ingredients (shapeless) to craft an empty map
 map_recipe:
   - "paper"
