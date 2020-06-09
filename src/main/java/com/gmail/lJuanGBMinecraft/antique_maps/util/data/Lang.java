@@ -12,6 +12,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import com.gmail.lJuanGBMinecraft.antique_maps.AntiqueMaps;
+import com.google.common.collect.Lists;
 
 public class Lang {
 
@@ -85,12 +86,16 @@ public class Lang {
 		}
 		
 		String text = map.get(path);
-		
 		for (int i = 0 ; i < variables.length; i++) 
 		{
 			text = text.replace("%" + i + "s", variables[i]);
 		}
 		text = ChatColor.RESET + ChatColor.translateAlternateColorCodes('&', text);
+
+		if (wrap <= 0)
+		{
+			return Lists.newArrayList(text);
+		}
 		
 		String[] wrapped = WordUtils.wrap(text, wrap).split(System.lineSeparator());
 		
